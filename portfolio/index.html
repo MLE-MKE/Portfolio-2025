@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Meta info and responsive setup -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emily Matson · Portfolio</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Site header with simple navigation -->
+  <header>
+    <nav>
+      <!-- Branding / Home link -->
+      <a href="#hero">EM</a>
+      <!-- Section links -->
+      <a href="#projects">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero (landing) section -->
+  <main id="hero">
+    <h1>Building useful apps</h1>
+    <p>Developer portfolio.</p>
+  </main>
+
+  <!-- About section -->
+  <section id="about">
+    <h2>About</h2>
+    <p>Skills + bio will go here.</p>
+  </section>
+
+  <!-- Projects section with placeholder grid -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <!-- Project cards will be added here -->
+    </div>
+  </section>
+
+  <!-- Contact section with simple form -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <!-- Form input fields -->
+      <input type="email" placeholder="Your email" required />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer with dynamic year (set by JS) -->
+  <footer>
+    © <span id="year"></span>
+  </footer>
+
+  <!-- Link to JS file -->
+  <script src="js/app.js" defer></script>
+</body>
+</html>

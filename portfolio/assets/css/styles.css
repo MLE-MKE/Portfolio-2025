@@ -1,0 +1,62 @@
+/* ---------- Theme variables ---------- */
+:root {
+  --bg: #0b0b10;       /* Page background */
+  --surface: #12121a;  /* Panels / cards background */
+  --text: #e8e8ef;     /* Main text color */
+  --muted: #a2a2b3;    /* Secondary text */
+  --brand: #8b5cf6;    /* Primary brand color (violet) */
+  --accent: #10b981;   /* Accent color (emerald) */
+  --radius: 14px;      /* Border radius for buttons/cards */
+  --maxw: 1100px;      /* Max width for centered content */
+}
+
+/* ---------- Reset basics ---------- */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ---------- Typography ---------- */
+h1, h2 {
+  line-height: 1.2;
+}
+
+/* ---------- Layout utilities ---------- */
+.container {
+  width: min(100% - 2rem, var(--maxw)); /* Keep content centered */
+  margin-inline: auto;
+}
+.grid {
+  display: grid;
+  gap: 1rem; /* Space between grid items */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius);
+  background: linear-gradient(45deg, var(--brand), var(--accent));
+  color: #fff;
+  text-decoration: none;
+}
+.btn:hover {
+  opacity: 0.9; /* Simple hover effect */
+}
+
+/* ---------- Navigation ---------- */
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-right: 0.75rem;
+}
+
+/* ---------- Section spacing ---------- */
+section {
+  padding: 3rem 0;
+}
